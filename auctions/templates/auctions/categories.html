@@ -1,0 +1,20 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+
+<ul>
+    {% for objs in all_objs %}
+        <li class="media" style="border: 1px solid rgb(199, 197, 197);">
+         
+        <a href={{objs.url}}><img src="{{objs.url}}" class="mr-3" alt="Product Image"
+        height="200" width="200"></a>
+        <div class="media-body">
+            <a href="/content/{{objs.id}}"><h3 class="mt-0 mb-1">{{objs.listing}}</h3></a>
+            <p><b>Description: </b>{{objs.description}}</p>
+            <p><b>Price: </b>{{objs.ini_bid}}$</p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

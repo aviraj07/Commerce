@@ -1,0 +1,12 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+<ul>
+    {% for objs in all_objs%}
+    <li>
+        <a class="nav-link" href="{% url 'categories' objs %}">{{objs}}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

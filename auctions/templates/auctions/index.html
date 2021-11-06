@@ -1,0 +1,22 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+<h2>Active Listings</h2>
+<br>
+
+<ul class="list-unstyled">
+    {% for listing in listings %}
+     
+    <li class="media" style="border: 1px solid rgb(199, 197, 197);">
+         
+        <a href={{listing.url}}><img src="{{listing.url}}" class="mr-3" alt="Product Image"
+        height="200" width="200"></a>
+        <div class="media-body">
+            <a href="/content/{{listing.id}}"><h3 class="mt-0 mb-1">{{listing.listing}}</h3></a>
+            <p><b>Description: </b>{{listing.description}}</p>
+            <p><b>Price: </b>{{listing.ini_bid}}$</p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
