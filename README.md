@@ -4,7 +4,7 @@ It is a web based app that makes it easy for you to list your products so that y
 ## Installation
 - You need to have **Django** installed on your local machine.
 - Download this zip code.
-- Go into this project's auctions's directory and run `python(or pyhton3) manage.py runserver`.
+- Go into this project's directory and run `python(or pyhton3) manage.py runserver`.
 - You'll be able to run the application.
 - To install django on your machine, [click here](https://docs.djangoproject.com/en/3.2/topics/install/).
 - To link database to your webapp run `python(or python3) manage.py makemigrations auctions` and then `python(or python3) manage.py migrate`.
